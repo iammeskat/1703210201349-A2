@@ -7,7 +7,7 @@ use App\Employee;
 class EmployeeController extends Controller
 {
     public function index(){
-    	$data['employees'] = Employee::all();
+    	$data['employees'] = Employee::with('department')->get();
     	return view('index', $data);
     }
 }

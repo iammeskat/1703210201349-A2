@@ -19,7 +19,7 @@
 	        <td>{{$employee->email}}</td>
 	        <td>{{$employee->address}}</td>
 	        <td>{{$employee->salary}}</td>
-	        <td>{{$employee->department_id}}</td>
+	        <td>{{$employee->department->name}}</td>
 	    </tr>
 	@endforeach
 </table>
